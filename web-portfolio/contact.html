@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Kontak</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <div class="logo">MuhNs</div>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="home.html">About</a></li>
+          <li><a href="portofolio.html">Portofolio</a></li>
+          <li><a href="#" class="btn">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact">
+      <div class="contact-container">
+        <div class="contact-form">
+          <h2>We’d love to help</h2>
+          <p>
+            We're a full-service agency with experts ready to help. We'll get in
+            touch within 24 hours.
+          </p>
+          <form>
+            <div class="input-group">
+              <div class="form-group">
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" name="first-name" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" name="last-name" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group checkbox">
+              <input type="checkbox" id="privacy" required />
+              <label for="privacy" id="text-checkbox"
+                >You agree to our friendly
+                <a href="#">privacy policy</a>.</label
+              >
+            </div>
+            <button type="submit">Send message</button>
+          </form>
+        </div>
+        <div class="contact-image"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-container">
+        <!-- Bagian Kiri - Branding -->
+        <div class="footer-brand">
+          <p>© 2025 Muhammad. Semua Hak Dilindungi.</p>
+        </div>
+
+        <!-- Bagian Kanan - Sosial Media -->
+        <div class="footer-social">
+          <a href="#"><img src="aset/facebook.svg" alt="Facebook" /></a>
+          <a href="#"><img src="aset/instagram.svg" alt="Instagram" /></a>
+          <a href="#"><img src="aset/linkedin.svg" alt="Linkedin" /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

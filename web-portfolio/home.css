@@ -1,0 +1,236 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+header {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, #e0dffa, #fdfdfe);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+nav ul li:hover {
+  transform: translateY(-5px);
+}
+
+nav ul li .btn {
+  background: #ff7f00;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: left;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.hero .btn {
+  background: #ff7f00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.hero-image img {
+  max-width: 90%;
+  height: auto;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  background: linear-gradient(to right, #ffedea, #f3eaff);
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 40%;
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  gap: 30px; /* Jarak antara gambar dan teks */
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 50px; /* Ukuran ikon */
+  height: 50px;
+  object-fit: contain;
+}
+
+.service-card .text-content {
+  display: flex;
+  flex-direction: column; /* Mengatur teks dalam kolom */
+}
+
+.service-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .service-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .service-card img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.about-right {
+  max-width: 50%;
+}
+
+.about h2 {
+  color: #ff7f00;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about p {
+  margin: 10px 0;
+}
+
+.about .btn {
+  background: #ff7f00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--frame-bg);
+  padding: 10px;
+  text-align: center;
+  margin: 0 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/* Branding */
+.footer-brand {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #0a0909;
+}
+
+/* Sosial Media */
+.footer-social {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-social a {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-social a:hover img {
+  transform: scale(1.1);
+}

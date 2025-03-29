@@ -1,0 +1,217 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  background-color: #f8f9fa; /* Sesuaikan warna dengan hero */
+  padding: 15px 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+} */
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: orange;
+}
+
+.navbar ul li a.active {
+  color: orange;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: #f0f0f0;
+}
+.hero img {
+  max-width: 400px;
+}
+/* .btn {
+  background-color: #ff9800;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #e68900;
+} */
+
+/* .hero {
+  background: url("assets/images/hero-bg.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+} */
+
+.hero-content {
+  max-width: 600px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  background: orange;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: darkorange;
+  transform: scale(1.05);
+}
+
+/* Portfolio */
+.portfolio,
+.contact {
+  padding: 50px;
+  text-align: center;
+}
+
+.portfolio h1,
+.contact h1 {
+  margin-bottom: 20px;
+}
+
+.portfolio ul {
+  list-style: none;
+}
+
+/* Proyek Portfolio */
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.project-item {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  max-width: 300px;
+}
+
+.project-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.project-item h3 {
+  margin-top: 10px;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: white;
+}
+
+/* ===== MEDIA QUERY ===== */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    margin-top: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul li {
+    margin: 5px 0;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+  }
+
+  .project-item {
+    max-width: 90%;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
